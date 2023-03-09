@@ -14,8 +14,8 @@ const Post = ({ author, text, replies }) => {
         
         {/* Collapse/Expand Btn + Avatar + Username */}
         <div className="collapse-container d-flex align-items-center">
-          {!showReplies && <span><img width="25px" onClick={() => setShowReplies(true)} src={expandImg} /></span>}
-          {showReplies && <span><img width="25px" onClick={() => setShowReplies(false)} src={collapseImg} /></span>}
+          {!showReplies && <span><img style={{cursor: "pointer"}} width="25px" onClick={() => setShowReplies(true)} src={expandImg} /></span>}
+          {showReplies && <span><img style={{cursor: "pointer"}} width="25px" onClick={() => setShowReplies(false)} src={collapseImg} /></span>}
           <span>
             <img className="" width="40px" src={author.avatar} />
           </span>
